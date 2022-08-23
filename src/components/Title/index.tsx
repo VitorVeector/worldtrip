@@ -5,7 +5,6 @@ export const Title = () => {
         <Flex
             mt={['5', '14']}
             w='100%'
-            maxW='1240px'
             justify='center'
         >
             <Heading

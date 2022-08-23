@@ -1,8 +1,15 @@
 import { Stack, Flex, Grid, Image, useBreakpointValue } from "@chakra-ui/react"
+import Link from "next/link"
+import { useRouter } from "next/router"
 
 
 export const Navigation = () => {
     const wideVersion = useBreakpointValue({ base: false, lg: true })
+
+    const { asPath } = useRouter()
+    const isHomePage = asPath === '/'
+
+
 
     return (
         <Flex
@@ -21,19 +28,27 @@ export const Navigation = () => {
                 templateColumns={'repeat(3, 1fr)'}
                 justifyContent='center'
                 alignItems='center'>
-                {wideVersion ?
-                    <Image
-                        src='/wideBackPage.svg'
-                        alt="Voltar para home"
-                        width={'1rem'}
-                        gridColumn='1'
-                    /> :
-                    <Image
-                        src='/backPage.svg'
-                        alt="Voltar para home"
-                        width={'0.5rem'}
-                        gridColumn='1'
-                    />}
+                {!isHomePage && (
+                    <Link href={'/'}>
+                        <a>
+                            {wideVersion ?
+                                <Image
+                                    src='/wideBackPage.svg'
+                                    alt="Voltar para home"
+                                    width={'1rem'}
+                                    gridColumn='1'
+                                /> :
+                                <Image
+                                    src='/backPage.svg'
+                                    alt="Voltar para home"
+                                    width={'0.5rem'}
+                                    gridColumn='1'
+                                />}
+                        </a>
+                    </Link>
+                )
+                }
+
                 <Image
                     src='/LogoWorldTrip.svg'
                     alt="Logo de WorldTrip"
@@ -44,7 +59,7 @@ export const Navigation = () => {
                 />
                 <Stack></Stack>
             </Grid>
-        </Flex>
+        </Flex >
     )
 }
 
