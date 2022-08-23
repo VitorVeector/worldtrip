@@ -14,4 +14,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Worldtrip -> NextJS, TypeScript and PrismicIO
 
-View [Application WorldTrip vizualization](./Video/WorldTrip.gif)
+View ![Application WorldTrip vizualization](./video/worldtrip.gif)
