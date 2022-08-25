@@ -28,6 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 # Worldtrip -> NextJS, TypeScript and PrismicIO
 
 - Sass
+- ChakraUI
 - NextJS
 - ReactJS
 - TypeScript
@@ -35,8 +36,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - PrismicIO (Working with CMS)
 
 
-
 PrismicIO ![Print Prismic Implementation](/video/prismicImplementation.png)
+
+View ![Application WorldTrip vizualization](/video/worldtrip.gif)
+
+Responsivity from head to toe ![Application WorldTrip Mobile vizualization](/video/WorldTripResponsive.gif)
+
+PrismicIO ![Print Prismic Implementation](./video/prismicImplementation.png)
 
 View ![Application WorldTrip vizualization](/video/worldtrip.gif)
 
