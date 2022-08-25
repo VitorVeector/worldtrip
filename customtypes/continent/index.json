@@ -1,0 +1,119 @@
+{
+  "id": "continent",
+  "label": "Continent",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "slug",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "description",
+          "placeholder": ""
+        }
+      },
+      "image_banner_slide": {
+        "type": "Image",
+        "config": {
+          "label": "image_banner_slide",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "summary": {
+        "type": "Text",
+        "config": {
+          "label": "summary",
+          "placeholder": ""
+        }
+      },
+      "summary_countries": {
+        "type": "Text",
+        "config": {
+          "label": "summary_countries",
+          "placeholder": ""
+        }
+      },
+      "summary_languages": {
+        "type": "Text",
+        "config": {
+          "label": "summary_languages",
+          "placeholder": ""
+        }
+      },
+      "summary_cities": {
+        "type": "Text",
+        "config": {
+          "label": "summary_cities",
+          "placeholder": ""
+        }
+      },
+      "summary_list_cities": {
+        "type": "Text",
+        "config": {
+          "label": "summary_list_cities",
+          "placeholder": ""
+        }
+      },
+      "main_cities": {
+        "type": "Group",
+        "config": {
+          "label": "main_cities",
+          "fields": {
+            "city_image": {
+              "type": "Image",
+              "config": {
+                "label": "city_image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "flag_country": {
+              "type": "Image",
+              "config": {
+                "label": "flag_country",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "main_city": {
+              "type": "Text",
+              "config": {
+                "label": "main_city",
+                "placeholder": ""
+              }
+            },
+            "main_country": {
+              "type": "Text",
+              "config": {
+                "label": "main_country",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

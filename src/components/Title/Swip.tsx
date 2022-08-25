@@ -6,17 +6,17 @@ interface SwipProps {
     link: string,
     imgUrl: string,
     title: string,
-    children: ReactNode
+    description: string
 }
 
-export const Swip: React.FC<SwipProps> = ({ imgUrl, title, children, link: ref }) => {
+export const Swip: React.FC<SwipProps> = ({ imgUrl, title, description, link: ref }) => {
     return (
         <Flex
             w='100%'
             h='100%'
             justify='center'
             align='center'
-            bgImage={`url(${imgUrl})`}
+            bgImage={`url('${imgUrl}')`}
             direction='column'
             textAlign='center'
             bgPosition='center'
@@ -29,10 +29,9 @@ export const Swip: React.FC<SwipProps> = ({ imgUrl, title, children, link: ref }
                         color='gray.50'
                         fontSize={['3xl', '5xl']}>{title}</Heading>
                     <Text
-                        
                         color='gray.100'
                         fontWeight='bold'>
-                        {children}
+                        {description}
                     </Text>
                 </a>
             </Link>

@@ -14,4 +14,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Worldtrip -> NextJS, TypeScript and PrismicIO
 
-View [Application WorldTrip vizualization](./Video/WorldTrip.gif)
+- Sass
+- NextJS
+- ReactJS
+- TypeScript
+- CleanCode
+- PrismicIO (Working with CMS)
+
+PrismicIO ![Print Prismic Implementation](./video/prismicImplementation.png)
+
+View ![Application WorldTrip vizualization](/video/worldtrip.gif)

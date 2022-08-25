@@ -1,7 +1,9 @@
 import { Grid, Flex, Heading, Popover, PopoverArrow, PopoverCloseButton, PopoverContent, PopoverTrigger, PopoverHeader, Text, PopoverBody, HStack, Icon } from "@chakra-ui/react"
 import { RiInformationLine } from 'react-icons/ri'
 
-export const Content = () => {
+import { ContinentProps } from '../../pages/continents/[slug]'
+
+export const Content = ({continent}: ContinentProps) => {
     return (
         <Flex
             justify='center'>
@@ -13,10 +15,12 @@ export const Content = () => {
                 justify='space-between'
                 align='center'>
                 <Text
+                    mx='auto'
+                    padding={['0 1rem', '0']}
                     maxWidth={['343px', '600px']}
                     textAlign='justify'
                     fontSize={['0.875rem', '1.5rem']}>
-                    A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+                    {continent.summary}
                 </Text>
                 <Flex
                     w='100%'
@@ -29,7 +33,7 @@ export const Content = () => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>50</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent.summary_countries}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -41,7 +45,7 @@ export const Content = () => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>60</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent.summary_languages}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -56,7 +60,7 @@ export const Content = () => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>27</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent.summary_cities}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -79,7 +83,7 @@ export const Content = () => {
                                 <PopoverArrow 
                                     bg='gray.700'/>
                                 <PopoverCloseButton />
-                                <PopoverBody>Londres, Amsterdã, Berlim, Lisboa</PopoverBody>
+                                <PopoverBody>{continent.summary_list_cities}</PopoverBody>
                             </PopoverContent>
                         </Popover>
                     </Flex>
