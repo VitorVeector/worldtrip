@@ -10,8 +10,34 @@ npm run dev
 yarn dev
 ```
 
+## PRISMIC CMS IMPLEMENTATION FEATURES
+
+> ### Creating Client
+````
+const endpoint = 'https://worldtripveector.prismic.io/api/v2'
+const accessToken = 'your-access-token-here'
+
+prismic = Prismic.createClient(endpoint, { accessToken })
+
+export { prismic }
+````
+`It's recommended to create the client in a separate file (or also even inside a factory method), so that you don't need to create it every time you want to query data.`
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # Worldtrip -> NextJS, TypeScript and PrismicIO
 
-View ![Application WorldTrip vizualization](./video/worldtrip.gif)
+- Sass
+- NextJS
+- ReactJS
+- TypeScript
+- CleanCode
+- PrismicIO (Working with CMS)
+
+
+
+PrismicIO ![Print Prismic Implementation](./video/prismicImplementation.png)
+
+View ![Application WorldTrip vizualization](/video/worldtrip.gif)
+
+Responsivity from head to toe ![Application WorldTrip Mobile vizualization](/video/WorldTripResponsive.gif)
