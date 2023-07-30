@@ -24,8 +24,9 @@ export const Cities = ({continent}: ContinentProps) => {
                     gap={['1.25rem', '2.8125rem']}
                     alignItems='center'
                     justifyContent='center'>
-                        {continent.main_cities.map(card => (
-                        <GridItem>
+                        {continent.main_cities.map((card: { country: string; city: string; thumbnail: string; flag: string }) => (
+                        <GridItem
+                            key={card.city}>
                             <CardCity country={card.country} city={card.city} imgUrl={card.thumbnail} flagUrl={card.flag}/>
                         </GridItem>
                         ))}

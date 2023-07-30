@@ -5,6 +5,7 @@ import theme from '../styles/theme'
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
+import "swiper/scss/effect-coverflow";
 
 import '../styles/slider.scss'
 

@@ -10,6 +10,7 @@ import SwiperComponent from '../components/Title/Swiper'
 
 import { getPrismicClient } from '../services/prismic'
 import Prismic from '@prismicio/client'
+import { Footer } from '../components/Footer'
 
 export interface ContinentProps {
   continents: {
@@ -29,6 +30,7 @@ export default function Home({ continents }: ContinentProps) {
       <Divider />
       <Title />
       <SwiperComponent continents={continents}/>
+      <Footer/>
     </>
   )
 }

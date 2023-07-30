@@ -9,8 +9,6 @@ export const Navigation = () => {
     const { asPath } = useRouter()
     const isHomePage = asPath === '/'
 
-
-
     return (
         <Flex
             as='header'
