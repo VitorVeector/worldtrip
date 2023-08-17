@@ -24,7 +24,7 @@ export const ContinentBanner = ({continent}: ContinentProps) => {
                     <Heading
                         color='gray.50'
                         padding='24px 0px'
-                        fontSize='3rem'>{continent.title}</Heading>
+                        fontSize='3rem'>{continent.title ? continent.title : 'Continente'}</Heading>
                 </Flex> :
 
                 <Flex
@@ -32,7 +32,7 @@ export const ContinentBanner = ({continent}: ContinentProps) => {
                     justify='center'>
                         <Heading
                         color='gray.50'
-                        fontSize='1.75rem'>{continent.title}</Heading>
+                        fontSize='1.75rem'>{continent.title ? continent.title : 'Continente'}</Heading>
                 </Flex>
             }
         </Flex>
