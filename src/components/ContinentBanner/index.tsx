@@ -7,7 +7,7 @@ export const ContinentBanner = ({continent}: ContinentProps) => {
         <Flex
             w='100%'
             h={['150px', '500px']}
-            bgImage={continent?.banner ? `url('${continent.banner}')` : ''}
+            bgImage={continent?.banner ? `url('${continent?.banner}')` : ''}
             bgPosition='center'
             bgRepeat='no-repeat'
             bgSize='cover'

@@ -54,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const paths = response.results.map(continent => {
         return {
             params: {
-                slug: continent.uid,
+                slug: continent?.uid,
             }
         }
     })

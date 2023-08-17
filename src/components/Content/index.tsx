@@ -20,7 +20,7 @@ export const Content = ({continent}: ContinentProps) => {
                     maxWidth={['343px', '600px']}
                     textAlign='justify'
                     fontSize={['0.875rem', '1.5rem']}>
-                    {continent.summary}
+                    {continent?.summary}
                 </Text>
                 <Flex
                     w='100%'
@@ -33,7 +33,7 @@ export const Content = ({continent}: ContinentProps) => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>{continent.summary_countries}</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent?.summary_countries}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -45,7 +45,7 @@ export const Content = ({continent}: ContinentProps) => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>{continent.summary_languages}</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent?.summary_languages}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -60,7 +60,7 @@ export const Content = ({continent}: ContinentProps) => {
                         align='center'>
                         <Heading
                             color='yellow'
-                            fontSize={['1.5rem', '3rem']}>{continent.summary_cities}</Heading>
+                            fontSize={['1.5rem', '3rem']}>{continent?.summary_cities}</Heading>
                         <Text
                             fontSize={['1.125rem', '1.5rem']}
                             color='gray.600'
@@ -83,7 +83,7 @@ export const Content = ({continent}: ContinentProps) => {
                                 <PopoverArrow 
                                     bg='gray.700'/>
                                 <PopoverCloseButton />
-                                <PopoverBody>{continent.summary_list_cities}</PopoverBody>
+                                <PopoverBody>{continent?.summary_list_cities}</PopoverBody>
                             </PopoverContent>
                         </Popover>
                     </Flex>

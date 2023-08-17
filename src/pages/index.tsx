@@ -44,10 +44,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
   const continents = response.results.map(continent => {
     return {
-      slug: continent.uid,
-      title: continent.data.title,
-      description: continent.data.description,
-      banner: continent.data.image_banner_slide.url
+      slug: continent?.uid,
+      title: continent?.data.title,
+      description: continent?.data.description,
+      banner: continent?.data.image_banner_slide.url
     }
   })
   return { props: { continents } }

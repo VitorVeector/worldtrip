@@ -35,12 +35,12 @@ export default function SwiperComponent({ continents }: ContinentProps) {
                 modules={[Navigation, Pagination, EffectCoverflow]} className="mySwiper">
                 {continents.map(continent => (
                     <SwiperSlide
-                        key={continent.title}>
+                        key={continent?.title}>
                         <Swip
-                            link={continent.slug}
-                            imgUrl={continent.banner}
-                            title={continent.title}
-                            description={continent.description} />
+                            link={continent?.slug}
+                            imgUrl={continent?.banner}
+                            title={continent?.title}
+                            description={continent?.description} />
                     </SwiperSlide>
                 ))}
             </Swiper>
