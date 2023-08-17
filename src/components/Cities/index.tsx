@@ -4,6 +4,7 @@ import { CardCity } from "./CardCity"
 import { ContinentProps } from '../../pages/continents/[slug]'
 
 export const Cities = ({continent}: ContinentProps) => {
+    console.log(continent.main_cities)
     return (
         <Flex
             w='100%'
@@ -25,10 +26,10 @@ export const Cities = ({continent}: ContinentProps) => {
                     alignItems='center'
                     justifyContent='center'>
                         {continent.main_cities.map((card: { country: string; city: string; thumbnail: string; flag: string }) => (
-                        <GridItem
-                            key={card.city}>
-                            <CardCity country={card.country} city={card.city} imgUrl={card.thumbnail} flagUrl={card.flag}/>
-                        </GridItem>
+                            <GridItem
+                                key={card.city}>
+                                <CardCity country={card.country} city={card.city} imgUrl={card.thumbnail} flagUrl={card.flag}/>
+                            </GridItem>
                         ))}
                 </Grid>
             </Flex>

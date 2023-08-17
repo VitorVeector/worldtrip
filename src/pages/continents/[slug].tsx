@@ -7,7 +7,6 @@ import { Navigation } from "../../components/Navigation";
 import { getPrismicClient } from "../../services/prismic";
 
 import Prismic from '@prismicio/client'
-import { RichText } from "prismic-dom";
 import { ParsedUrlQuery } from "querystring";
 
 interface IParams extends ParsedUrlQuery {
@@ -24,13 +23,13 @@ export interface ContinentProps {
         summary_languages: string,
         summary_cities: string,
         summary_list_cities: string,
-        main_cities?: {
+        main_cities: {
             city: string,
             country: string,
             thumbnail: string,
             flag: string
-        }
-    }[]
+        }[]
+    }
 }
 
 export default function Continent({ continent }: ContinentProps) {
