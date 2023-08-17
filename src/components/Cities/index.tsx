@@ -4,7 +4,6 @@ import { CardCity } from "./CardCity"
 import { ContinentProps } from '../../pages/continents/[slug]'
 
 export const Cities = ({continent}: ContinentProps) => {
-    console.log(continent.main_cities)
     return (
         <Flex
             w='100%'
